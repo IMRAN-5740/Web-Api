@@ -27,5 +27,15 @@ namespace WebApiDemo.Controllers
         {
             products.Add(ProductName);
         }
+        [HttpGet]
+        public void Update(int id,string ProductName)
+        {
+            products[id] = ProductName;
+        }
+        [HttpGet]
+        public void Delete(int id)
+        {
+            products.RemoveAt(id);
+        }
     }
 }
