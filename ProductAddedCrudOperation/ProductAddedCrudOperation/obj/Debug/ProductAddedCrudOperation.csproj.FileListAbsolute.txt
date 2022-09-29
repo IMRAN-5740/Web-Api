@@ -90,3 +90,4 @@ E:\WEB API\ProductAddedCrudOperation\ProductAddedCrudOperation\bin\EntityFramewo
 E:\WEB API\ProductAddedCrudOperation\ProductAddedCrudOperation\obj\Debug\ProductAddedCrudOperation.Migrations.initial.resources
 E:\WEB API\ProductAddedCrudOperation\ProductAddedCrudOperation\obj\Debug\ProductAddedCrudOperation.csproj.GenerateResource.cache
 E:\WEB API\ProductAddedCrudOperation\ProductAddedCrudOperation\obj\Debug\ProductAddedCrudOperation.Migrations.addmigration.resources
+E:\WEB API\ProductAddedCrudOperation\ProductAddedCrudOperation\bin\XmlDocument.xml

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WebApiDemo.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    int SerialNo = 1;
+}
+<style>
+    h2 {
+        text-align: center;
+    }
+</style>
+<h2 >Product List</h2>
+<table class="table">
+    <thead>
+        <th>Serial No</th>
+        <th>Name</th>
+        <th>Type</th>
+    </thead>
+    <tbody>
+        @foreach(var data in Model)
+            {
+            
+                <tr>
+                   <td>@(SerialNo++)</td>
+                    <td>@data.Name</td>
+                    <td>@data.Type</td>
+                </tr>
+            }
+    </tbody>
+</table>
+

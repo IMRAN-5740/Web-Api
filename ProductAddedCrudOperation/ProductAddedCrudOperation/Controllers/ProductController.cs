@@ -49,12 +49,11 @@ namespace ProductAddedCrudOperation.Controllers
                 return Ok(products);
             }
         }
-       
 
-        [HttpGet]
         /// <summary>
         /// Get By Id Search
         /// </summary>
+        [HttpGet]
         public IHttpActionResult GetbyID(int id)
         {
             var product = _context.Products.FirstOrDefault(p=>p.Id==id);
