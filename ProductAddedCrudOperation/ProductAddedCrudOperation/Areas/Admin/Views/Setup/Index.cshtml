@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ProductAddedCrudOperation.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    int serialNo = 1;
+}
+<style>
+    h2{
+        text-align:center;
+    }
+</style>
+
+<h2>Product List</h2>
+<table class="table">
+    <thead>
+        <th>Serial No</th>
+        <th>Product Name</th>
+        <th>Product Type</th>
+    </thead>
+        <tbody>
+            @foreach (var data in Model)
+            {
+                <tr>
+                    <td>@(serialNo++)</td>
+                    <td>@data.Name</td>
+                    <td>@data.Type</td>
+                </tr>
+               
+            }
+
+        </tbody>
+</table>
+
