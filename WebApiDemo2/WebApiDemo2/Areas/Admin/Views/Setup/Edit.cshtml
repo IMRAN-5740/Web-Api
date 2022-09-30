@@ -1,0 +1,16 @@
+﻿@model WebApiDemo2.Models.Product
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<form action="Edit" method="post">
+    <h3>@ViewBag.message</h3>
+    <input type="hidden" id="Id" name="Id" value="@Model.Id" />
+    <label>Product Name</label><br />
+    <input type="text" id="Name" class="form-control" name="Name" value="@Model.Name" /><br />
+    <label>Product Type</label><br />
+    <input type="text" id="Type" class="form-control" name="Type" value="@Model.Type" /><br /><br />
+    <input type="submit" class="btn btn-success" value="Update Data" />
+
+</form>

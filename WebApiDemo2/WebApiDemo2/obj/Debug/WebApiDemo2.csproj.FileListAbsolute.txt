@@ -89,3 +89,4 @@ E:\WEB API\WebApiDemo2\WebApiDemo2\bin\EntityFramework.xml
 E:\WEB API\WebApiDemo2\WebApiDemo2\bin\EntityFramework.SqlServer.xml
 E:\WEB API\WebApiDemo2\WebApiDemo2\obj\Debug\WebApiDemo2.Migrations.initial.resources
 E:\WEB API\WebApiDemo2\WebApiDemo2\obj\Debug\WebApiDemo2.csproj.GenerateResource.cache
+E:\WEB API\WebApiDemo2\WebApiDemo2\bin\XmlDocument.xml

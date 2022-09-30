@@ -11,6 +11,11 @@ namespace WebApiDemo2.Controllers
     public class ProductController : ApiController
     {
         ApplicationDbContext _context=new ApplicationDbContext();
+        /// <summary>
+        /// Add Product
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
         [HttpPost]
         public IHttpActionResult AddProduct([FromBody]Product product)
         {
@@ -26,6 +31,10 @@ namespace WebApiDemo2.Controllers
             }
 
         }
+        /// <summary>
+        /// Get All Products
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IHttpActionResult GetAllProducts()
         {
@@ -39,6 +48,11 @@ namespace WebApiDemo2.Controllers
                 return Ok(products);
             }
         }
+        /// <summary>
+        /// Get By Id 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public IHttpActionResult GetById(int id)
         {
@@ -52,6 +66,11 @@ namespace WebApiDemo2.Controllers
                 return Ok(product);
             }
         }
+        /// <summary>
+        /// Update Product 
+        /// </summary>
+        /// <param name="product"></param>
+        /// <returns></returns>
         [HttpPut]
         public IHttpActionResult UpdateProduct([FromBody]Product product)
         {
@@ -73,6 +92,11 @@ namespace WebApiDemo2.Controllers
                 }
             }
         }
+        /// <summary>
+        /// Delete Product
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         public IHttpActionResult DeleteProduct(int id)
         {
